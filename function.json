@@ -1,0 +1,29 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "message",
+      "direction": "out",
+      "type": "sendGrid",
+      "apiKey": "api_js",
+      "to": "karthikr24121996@gmail.com",
+      "from": "ravikarthik1996@gmail.com",
+      "subject": "test mail",
+      "text": "Hi,This is a test mail. Thanks"
+    }
+  ]
+}
